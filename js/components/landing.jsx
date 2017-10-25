@@ -68,6 +68,7 @@ class LandingComponent extends Component {
           <AgencyPreview
             agency={this.state.agency}
             agencyComponentsForAgency={this.state.agencyComponentsForAgency}
+            onAgencySelect={agencyChange}
           />
         }
       </div>
