@@ -28,7 +28,7 @@ function AgencyComponentPreview({ agencyComponent }) {
 
         { agencyComponent.request_data_year &&
           <div>
-            <h4>Median processing time (estimates)</h4>
+            <h4>Average processing time (estimates)</h4>
             <AgencyComponentProcessingTime
               agencyComponent={agencyComponent}
             />
