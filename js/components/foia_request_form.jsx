@@ -15,6 +15,7 @@ import { dataUrlToAttachment, findFileFields } from '../util/attachment';
 import UploadProgress from './upload_progress';
 import { scrollOffset } from '../util/dom';
 import dispatcher from '../util/dispatcher';
+import validator from '@rjsf/validator-ajv8';
 
 function FoiaRequestForm({
   formData, upload, onSubmit, requestForm, submissionResult,
@@ -122,6 +123,7 @@ function FoiaRequestForm({
       onError={onError}
       showErrorList={false}
       transformErrors={transformErrors}
+      validator={validator}
     >
       <div id="foia-request-form_submit" className="foia-request-form_submit">
         <div className="foia-request-form_inline-progress">
